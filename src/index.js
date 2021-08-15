@@ -1,7 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App';
 import './index.css';
 
+ReactDOM.render(<App />, document.querySelector('#root'));
+
+// ======================================================
 // function Square(props) {
 //   return (
 //     <button className="square" onClick={props.onClick}>
@@ -70,7 +74,10 @@ import './index.css';
 //     return (
 //       <div className="game">
 //         <div className="game-board">
-//           <Board />
+//           {
+//             /* <Board /> */
+//             <Statecomponent />
+//           }
 //         </div>
 //         <div className="game-info">
 //           <div>{/* status */}</div>
@@ -81,58 +88,5 @@ import './index.css';
 //   }
 // }
 
-// // ========================================
-
 // ReactDOM.render(<Game />, document.getElementById('root'));
-
-// function greet(obj) {
-//   return obj.person + ' ' + obj.surname;
-// }
-
-// const obj = {
-//   person: 'Kostya',
-//   surname: 'Bogodskiy',
-// };
-// // const element = <h1>Привет {greet(obj)}!</h1>;
-// // ReactDOM.render(element, document.getElementById('root'));
-
-// function Welcom(props) {
-//   return <h1>Hello {props.name}</h1>;
-// }
-
-// function tick() {
-//   const element = (
-//     <div>
-//       <h1>Привет {greet(obj)}!</h1>
-//       <h2>It is {new Date().toLocaleTimeString()}.</h2>
-//     </div>
-//   );
-//   ReactDOM.render(element, document.getElementById('root'));
-//   // Несмотря на то, что мы создаём элемент, описывающий всё UI-дерево, каждую секунду React DOM изменяет только текстовый узел, содержимое которого изменилось.
-// }
-// setInterval(tick, 1000);
-
-// function App() {
-//   return (
-//     <div>
-//       <Welcom name="Kostya" />;
-//     </div>
-//   );
-// }
-
-// ReactDOM.render(<App />, document.getElementById('root'));
-
-function Clock(props) {
-  return (
-    <div>
-      <h1>Привет Мир!</h1>
-      <h2>It is {props.date.toLocaleTimeString()}</h2>
-    </div>
-  );
-}
-
-function tick() {
-  ReactDOM.render(<Clock date={new Date()} />, document.getElementById('root'));
-}
-
-setInterval(tick, 1000);
+// ========================================
