@@ -1,24 +1,29 @@
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
+// import Form from './Form';
+// import ListUser from './ListUsers';
 
-class App extends Component {
-  state = {
-    display: true,
-  };
+// import Toggle from './Toggle';
+// // import UseEffect from './UseEffect';
+// import UseStateButtons from './UseStateButtons';
 
-  handleButton = () => {
-    const { display } = this.state;
-    this.setState({
-      display: !display,
-    });
-  };
-
-  render() {
-    return (
-      <div>
-        <button onClick={this.handleButton}>Show Hello!</button>
-        {this.state.display ? <h1>Hello World!</h1> : null}
-      </div>
-    );
-  }
-}
-export default App;
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <div>
+//           <ListUser />
+//         </div>
+//         <div>
+//           <Toggle />
+//         </div>
+//         <div>
+//           <Form />
+//         </div>
+//         <UseStateButtons />
+//         {/* <UseEffect /> */}
+//         <Game />
+//       </div>
+//     );
+//   }
+// }
+// export default App;
