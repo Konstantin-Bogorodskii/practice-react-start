@@ -8,6 +8,10 @@ ul {
   padding-left: 30px;
 }
 
+div {
+  margin: 10px;
+}
+
 .board-row:after {
   clear: both;
   content: '';
